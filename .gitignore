@@ -1,0 +1,131 @@
+# ==========================================
+# Python 项目通用忽略规则
+# ==========================================
+
+# Python 字节码
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 虚拟环境
+venv/
+ENV/
+env/
+.venv/
+
+# 分发/打包
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ==========================================
+# 项目特定的大文件和数据文件
+# ==========================================
+
+# JSON 数据文件（大容量）
+pending/*.json
+pending/results/*.json
+!pending/results/.gitkeep
+
+# Excel 原始数据文件
+pending/*.xlsx
+pending/*.xls
+pending/*.csv
+
+# 日志文件
+logs/*.log
+logs/**/*.log
+*.log
+
+# 测试结果和报告
+*_report_*.json
+test_report_*.json
+logistics_result_*.json
+
+# 运行生成的临时文件
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# ==========================================
+# 敏感配置文件
+# ==========================================
+
+# 环境变量文件（包含 API 密钥）
+.env
+.env.local
+.env.*.local
+
+# 配置文件中的敏感信息
+config/*.key
+config/secrets.yaml
+config/secrets.json
+
+# ==========================================
+# IDE 和编辑器文件
+# ==========================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# ==========================================
+# 操作系统文件
+# ==========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ==========================================
+# 其他
+# ==========================================
+
+# 模型权重文件（如果有）
+*.pth
+*.h5
+*.ckpt
+*.weights
+*.model
+
+# 大数据集文件
+data/*.json
+data/*.csv
+data/*.xlsx
+
+# 缓存目录
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# 覆盖率报告
+htmlcov/
+.coverage
+.coverage.*
+
